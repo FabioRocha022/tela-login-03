@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicie sessão</title>
+    <link rel="stylesheet" href="assets/estilos/style.css">
+</head>
+<body>
+    <main id="grid-container">
+        <div id="flex-container">
+            <section class="login">
+                <img src="assets/imagens/anonimo-login.jpg" alt="login">
+                <h1>Bem-vindo(a)!</h1>
+                <span>Faça o login para ter acesso aos seus dados.</span>
+                <form action="teste.php" method="post">
+                    <div class="parametros">
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="parametros">
+                        <label for="ipassword">Password</label>
+                        <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" required minlength="8" maxlength="20">
+                    </div>
+                    <div class="termos">
+                        <input type="checkbox" name="termos" id="itermos">
+                        <label for="itermos">Concordo com os <a href="">Termos de utilização</a></label>
+                    </div>
+                    <input id="seguinte" type="submit" value="Seguinte">
+                </form>
+            </section>
+        </div>
+    </main>
+    <img id="img-final" src="assets/imagens/pc-img-mobile.jpg" alt="">
+</body>
+</html>
